@@ -14,7 +14,7 @@ class CustomAdapter(private val usersList: List<User>) :
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
         return ViewHolder(view)
     }
-//view holder calling our xml Id
+    //view holder calling our xml Id
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val user = usersList[position]
         holder.txt_body.text = user.bodytext
