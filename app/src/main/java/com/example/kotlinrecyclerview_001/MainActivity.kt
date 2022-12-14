@@ -16,11 +16,27 @@ class MainActivity : AppCompatActivity() {
         val user2 = User("The Rock", "Action Actor")
         val user3 = User("Kevin Hart", "Comedian Actor")
 
+        val user4 = User("John Paul", "Actor")
+        val user5 = User("The Rock", "Action Actor")
+        val user6 = User("Kevin Hart", "Comedian Actor")
+
+
+        val user7 = User("John Paul", "Actor")
+        val user8 = User("The Rock", "Action Actor")
+        val user9 = User("Kevin Hart", "Comedian Actor")
+
+
         //array data
         val usersList = ArrayList<User>()
         usersList.add(user1)
         usersList.add(user2)
         usersList.add(user3)
+        usersList.add(user4)
+        usersList.add(user5)
+        usersList.add(user6)
+        usersList.add(user7)
+        usersList.add(user8)
+        usersList.add(user9)
 
         var adapter = CustomAdapter(usersList)
         recycler.layoutManager = LinearLayoutManager(this)
